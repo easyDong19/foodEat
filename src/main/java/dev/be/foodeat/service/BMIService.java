@@ -10,7 +10,7 @@ public class BMIService {
     public BmiDTO getUserBMI(double height, double weight){
         //BMI지표
         BmiDTO bmIDTO = new BmiDTO();
-        double mheight = height/100;
+        double mheight = height/100; // cm -> m 변환
         double index = weight/(mheight*mheight);
         bmIDTO.setIndex(index);
         //BMI 이상적 몸무게(하한, 상한)
