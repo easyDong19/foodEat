@@ -21,7 +21,6 @@ public class Diet {
     private double protein;
     private double fat;
     private double carbo;
-    private String food_type;
 
     @OneToMany(mappedBy = "diet")
     private List<Food_diet> diet_list = new ArrayList<>();
