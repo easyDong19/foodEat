@@ -8,7 +8,6 @@ import java.util.List;
 public class DietSearchDTO {
     private Long id;
     private String name;
-    private List<String> recipe;
 
     protected DietSearchDTO(){
 
@@ -26,6 +25,5 @@ public class DietSearchDTO {
     public DietSearchDTO(Long id, String name, List<String> recipe) {
         this.id = id;
         this.name = name;
-        this.recipe = recipe;
     }
 }

@@ -52,7 +52,7 @@ public class DietController {
     //BMI 수치가 있을 경우 18미만이면 고열량위주로 보여주고 25이상이면 저열량위주로 정렬해서 검색결과를 보여줌
     //BMi 수치가 없을 경우는 정렬하지 않고 이름으로 검색해서 보여줌
     @GetMapping("/diet")
-    public Page<?> searchDiet(int page, int size, @RequestParam String name, @RequestParam(required = false) Double bmi){
+    public Page<DietSearchDTO> searchDiet(int page, int size, @RequestParam String name, @RequestParam(required = false) Double bmi){
         PageRequest pageRequest = PageRequest.of(page,size);
 
         if(bmi != null){

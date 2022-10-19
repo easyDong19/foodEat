@@ -32,8 +32,6 @@ public class Food_diet {
 
         this.getFood().getFood_list().add(this);
         this.getDiet().getDiet_list().add(this);
-
-
     }
 
 
